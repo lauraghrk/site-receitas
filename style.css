@@ -105,15 +105,33 @@ div.txt {
     font-size: 1.2em;
     font-weight: 600;
     text-align: left;
-    padding: 30px 180px;
+    padding: 30px 100px;
 }
 
 div.links {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-div.links > picture > a {
-    text-align: center;
+div.box {
+    margin: 18px;
+}
+div.box > a {
     text-decoration: none;
+    color: var(--cor05);
+}
+div.box > a:hover {
+    text-decoration: underline;
+}
+div.box > a > img {
+    border: solid 1px black;
+}
+div.box > a > h3 {
+    font-family: var(--fontetitulo);
+    font-weight: bold;
+}
+div.box > a > p {
+    font-family: var(--fontecorpo);
+    font-size: 0.9em;
 }
 
 footer {
