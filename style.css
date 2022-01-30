@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap');
 
 :root {
     --fontetitulo: 'Bodoni Moda', serif;
@@ -98,6 +98,7 @@ main {
     max-width: 1200px;
     min-height: 705px;
     margin: auto;
+    color: var(--cor05);
 }
 
 div.txt {
@@ -111,9 +112,11 @@ div.txt {
 div.links {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 div.box {
-    margin: 18px;
+    margin: 20px;
+    max-width: 346px;
 }
 div.box > a {
     text-decoration: none;
@@ -123,15 +126,18 @@ div.box > a:hover {
     text-decoration: underline;
 }
 div.box > a > img {
-    border: solid 1px black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 div.box > a > h3 {
     font-family: var(--fontetitulo);
-    font-weight: bold;
+    font-weight: 800;
+    font-size: 1.2em;
 }
 div.box > a > p {
     font-family: var(--fontecorpo);
     font-size: 0.9em;
+    font-weight: 400;
+    text-align: justify;
 }
 
 footer {
@@ -150,4 +156,40 @@ footer > p > a {
 }
 footer > p > a:hover {
     color: var(--cor03);
+}
+
+/*Páginas secundárias*/
+
+div.receita {
+    margin-left: 90px;
+}
+h2 {
+    font-family: var(--fontetitulo);
+    font-weight: 800;
+    padding: 20px;
+}
+
+.ingredientes, .preparo > h4 {
+    padding: 10px;
+    font-weight: 600;
+}
+.ingredientes > ul {
+    list-style-type: square;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+.ingredientes > ul > li {
+    padding: 5px;
+}
+
+.preparo > p {
+    font-weight: 400;
+    padding: 5px 30px;
+}
+
+.foto {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
 }
