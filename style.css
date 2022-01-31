@@ -98,6 +98,8 @@ main {
     min-height: 800px;
     margin: auto;
     color: var(--cor05);
+    text-align: justify;
+    padding-right: 50px;
 }
 
 div.txt {
@@ -161,7 +163,7 @@ footer > p > a:hover {
 /*Páginas secundárias*/
 
 div.receita {
-    margin-left: 90px;
+    margin-left: 80px;
 }
 .receita > p {
     font-weight: 400;
